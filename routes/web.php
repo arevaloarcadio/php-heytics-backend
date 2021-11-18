@@ -17,7 +17,6 @@ $router->get('/', function () use ($router) {
     return $router->app->version();
 });
 
-$router->get('categories', 'CitasYReservas\CategoriesController@index');
-$router->post('categories', 'CitasYReservas\CategoriesController@store');
+$router->get('/categories', 'CitasYReservas\CategoriesController@index');
 
-$router->post('store', 'CitasYReservas\StoreController@index');
+$router->post('/store', 'CitasYReservas\StoreController@index');
