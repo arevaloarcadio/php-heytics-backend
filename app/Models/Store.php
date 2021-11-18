@@ -9,7 +9,9 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Laravel\Lumen\Auth\Authorizable;
 
-class CyrCategories extends Model 
+class Store extends Model 
 {
-	protected $primaryKey = "categories_id";
+	protected $primaryKey = "store_id";
+	protected $table = "store";
+
 }

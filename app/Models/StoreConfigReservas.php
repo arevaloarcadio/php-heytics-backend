@@ -9,7 +9,14 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Laravel\Lumen\Auth\Authorizable;
 
-class CyrCategories extends Model 
+class StoreConfigReservas extends Model 
 {
-	protected $primaryKey = "categories_id";
+	protected $primaryKey = "store_id";
+	protected $table = "store_config_reservas";
+
+
+    public function store()
+    {
+        return $this->belongsTo('App\Models\Store','store_id','store_id');
+    }
 }

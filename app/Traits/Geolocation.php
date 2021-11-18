@@ -1,6 +1,9 @@
- <?php 
+<?php 
+namespace App\Traits;
  
-   public function GetDistancia($lat1, $lon1, $lat2, $lon2) { 
+trait Geolocation
+{
+    public function getDistancia($lat1, $lon1, $lat2, $lon2) { 
         $pi80 = M_PI / 180; 
         $lat1 *= $pi80; 
         $lon1 *= $pi80; 
